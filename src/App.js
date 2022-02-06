@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 function App() {
     return (
         <div className="flex flex-col justify-center items-center h-screen bg-gray-800">
-            <div className="mx-auto max-w-3xl p-4 shadow-xl rounded bg-slate-100">
+            <div className="mx-auto max-w-3xl p-4 shadow-xl rounded bg-slate-200">
                 <div className="text-center">
                     <img src={logo} alt="Logo" className="h-32 my-4 mx-auto" />
 
