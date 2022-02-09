@@ -20,8 +20,8 @@ const EventsCollection = (props) => {
     <>
       {loading ? (
         <ul className="flex flex-row justify">
-          {events.map((e, index) => (
-            <li key={index} className="m-5">
+          {events.map((e) => (
+            <li key={e.id} className="m-5">
               <EventCard {...e} />
             </li>
           ))}

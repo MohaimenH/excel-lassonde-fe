@@ -14,7 +14,7 @@ const EventCard = ({ title, description, date_start, location, imageURL }) => {
 
         <span className="text-2xl font-bolds">{title}</span>
 
-        <p className="max-w-sm  p-2">{`${description.slice(0, 120)}...`}</p>
+        <p className="max-w-sm p-2">{`${description.slice(0, 120)}...`}</p>
 
         <div className="flex flex-row justify-between mb-0 pb-0 align-bottom">
           <div className="flex flex-row mx-4 pt-1 my-0">
