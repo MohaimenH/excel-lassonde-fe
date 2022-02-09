@@ -1,9 +1,10 @@
 import "./App.css";
+import EventsCollection from "./components/EventsCollection";
 import logo from "./logo.svg";
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-gray-800">
+    <div className="flex flex-col justify-center items-center h-screen bg-purple-900">
       <div className="mx-auto max-w-3xl p-4 shadow-xl rounded bg-slate-200">
         <div className="text-center">
           <img src={logo} alt="Logo" className="h-32 my-4 mx-auto" />
@@ -31,6 +32,7 @@ function App() {
           </div>
         </div>
       </div>
+      <EventsCollection />
     </div>
   );
 }
