@@ -6,13 +6,14 @@
   .sidebar-icon {
     @apply relative flex items-center justify-center h-12 m-3 
     bg-excel-black-light rounded-lg 
-    hover:bg-excel-secondary hover:text-excel-black 
+    active:bg-excel-secondary active:text-excel-black
+    hover:bg-excel-primary
     transition-all duration-200 ease-in;
   }
   .sidebar-tooltip {
     @apply absolute w-auto p-2 m-2 min-w-max left-16 rounded-md shadow-md
     text-white bg-excel-black-light
     text-sm font-bold 
-    transition-all duration-100 ease-in scale-0 origin-left;
+    transition-all duration-200 ease-in opacity-0 origin-left invisible;
   }
 }
