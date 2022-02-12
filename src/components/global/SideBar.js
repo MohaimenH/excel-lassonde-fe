@@ -21,13 +21,31 @@ const SideBar = ({ type }) => {
 
   return (
     <div
-      className="z-50 rounded-b-xl w-screen h-20 m-0 flex flex-row justify-between
+      className="z-50 rounded-b-xl w-screen h-16 m-0 flex flex-row justify-between
     md:rounded-none md:rounded-tr-md md:h-screen md:w-20 md:flex-col md:justify-start
-    fixed top-0 left-0 pt-1 align-center bg-excel-black shadow-2xl text-white"
+    fixed top-0 left-0 align-center bg-excel-black shadow-2xl text-white"
     >
       <HomeButton />
       {sideBarType}
     </div>
+  );
+};
+
+const HomeButton = () => {
+  return (
+    <button
+      className="m-3 flex group transition opacity-100 animate__animated animate__fadeInLeft
+    md:animate__fadeInDown"
+    >
+      <img
+        src="excelIcon.png"
+        alt="Excel Lassonde Logo"
+        className="w-10 h-10 hover:scale-110 active:brightness-110 transition-all duration-400 ease-in md:w-12 md:h-12 md:ml-1"
+      />
+      <span className="sidebar-tooltip group-hover:opacity-100 group-hover:visible">
+        Home
+      </span>
+    </button>
   );
 };
 
@@ -48,21 +66,6 @@ const SideBarStudent = () => {
       />
       <SideBarIcon icon={<BsGearWide size={24} />} text="Profile & Settings" />
     </>
-  );
-};
-
-const HomeButton = () => {
-  return (
-    <button className="m-3 flex group transition opacity-100 animate__animated animate__fadeInDown">
-      <img
-        src="excelIcon.png"
-        alt="Excel Lassonde Logo"
-        className="hover:scale-110 active:brightness-110 transition-all duration-400 ease-in"
-      />
-      <span className="sidebar-tooltip group-hover:opacity-100 group-hover:visible">
-        Home
-      </span>
-    </button>
   );
 };
 
