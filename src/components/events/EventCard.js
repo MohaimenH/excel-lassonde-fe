@@ -4,7 +4,7 @@ import { DateTime } from "luxon";
 
 const EventCard = ({ title, description, date_start, location, imageURL }) => {
   return (
-    <div className="h-[28rem] max-w-3xl pb-3 shadow-2xl rounded-lg bg-slate-200">
+    <div className="h-[28rem] max-w-3xl pb-3 shadow-lg border-2 border-slate-300 rounded-lg bg-slate-200">
       <div className="text-center">
         <img
           src={imageURL}

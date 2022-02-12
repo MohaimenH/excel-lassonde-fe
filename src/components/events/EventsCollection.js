@@ -19,13 +19,16 @@ const EventsCollection = (props) => {
   return (
     <>
       {loading ? (
-        <ul className="flex flex-row justify">
-          {events.map((e, index) => (
-            <li key={index} className="m-5">
-              <EventCard {...e} />
-            </li>
-          ))}
-        </ul>
+        <section className="rounded-3xl bg-excel-light-purple shadow-[0_0px_40px_-15px_rgba(0,0,0,0.3)]">
+          <h2 className="text-3xl mt-3 mx-5 text-black">Upcoming Events</h2>
+          <ul className="flex flex-row justify">
+            {events.map((e, index) => (
+              <li key={index} className="m-5">
+                <EventCard {...e} />
+              </li>
+            ))}
+          </ul>
+        </section>
       ) : (
         <div></div>
       )}

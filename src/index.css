@@ -4,14 +4,16 @@
 
 @layer components {
   .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 m-3 
+    @apply relative flex items-center min-w-min p-3 justify-center w-12 m-3
+    md:h-12 md:p-0
     bg-excel-black-light rounded-lg 
     active:bg-excel-secondary active:text-excel-black
     hover:bg-excel-primary
     transition-all duration-200 ease-in;
   }
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-16 rounded-md shadow-md
+    @apply absolute w-auto p-2 m-2 min-w-max top-16 rounded-md shadow-md
+    md:left-16 md:top-0
     text-white bg-excel-black-light
     text-sm font-bold 
     transition-all duration-200 ease-in opacity-0 origin-left invisible;
